@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.codezcook.archiplanner2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Archiplanner">
+        <activity android:name="com.codezcook.archiplanner.ui.OrderActivity"></activity>
+        <activity android:name="com.codezcook.archiplanner.payment.CheckoutActivity"/>
+        <activity
+            android:name="com.codezcook.archiplanner.login.LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity android:name="com.codezcook.archiplanner.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/Theme.Archiplanner.NoActionBar"/>
+        <activity android:name="com.codezcook.archiplanner.ui.dashboard.fragments.ImageActivity" />
+        <activity android:name="com.codezcook.archiplanner.ui.dashboard.quotation.QuoPdfActivity" />
+        <activity android:name="com.codezcook.archiplanner.ui.dashboard.fragments.PlanViewActivity" />
+        <activity android:name="com.codezcook.archiplanner.ui.dashboard.fragments.ViewmodelsActivity" />
+        <activity
+            android:name="com.codezcook.archiplanner.MainActivity"
+            android:theme="@style/Theme.Archiplanner.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713"/>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.homefolder.example.provider.archplanner"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name="com.codezcook.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

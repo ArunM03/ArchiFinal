@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "887752709191",
+    "project_id": "archiplanner-cc7c0",
+    "storage_bucket": "archiplanner-cc7c0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887752709191:android:c6df91a825b6bf271f8d62",
+        "android_client_info": {
+          "package_name": "com.codezcook.archiplanner2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "887752709191-ikl9rockrmsjt7mrtp55qh9ad00ipcu0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpXwhZc6k1-Mwbip8edJJ_L0t2s2Tx-94"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "887752709191-ikl9rockrmsjt7mrtp55qh9ad00ipcu0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:strokeColor="#D50000"
+        app:strokeWidth="1dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_companyname4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="QUOTATION"
+                android:textColor="@color/purple_800"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_place4" />
+
+            <TextView
+                android:id="@+id/tv_cellno4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="cell n0: 9023480923"
+                android:textColor="@color/purple_700"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_place4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Place : Tanjore"
+                android:textColor="@color/purple_700"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+            <TableLayout
+                android:id="@+id/table12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_companyname4">
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/tv_carparking2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="Carparking ,Staircase&amp; Bathroom Floor tile Price"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/ed_carparking2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="30RS/sq feet"
+                        android:textColor="@color/purple_700"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/tv_kitchenwall2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="Kitchen Wall Tiles Height"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/ed_kitchenwall2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="4.5’"
+                        android:textColor="@color/purple_700"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/tv_bathroomwall2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="Bathroom Wall Tiles Height"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/ed_bathroomwall2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="7’0”"
+                        android:textColor="@color/purple_700"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/tv_skirting2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="Skirting Height"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/ed_skirting2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="4”"
+                        android:textColor="@color/purple_700"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/tv_kitchenslab2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="Kitchen Slab"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/ed_kitchenslab2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="Using Granite Price Upto 80 RS/Sq feet"
+                        android:textColor="@color/purple_700"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/tv_cementbrand2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="CEMENT BRAND"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/table12" />
+
+            <TableLayout
+                android:id="@+id/table13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@color/black"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_cementbrand2">
+
+                <TableRow>
+
+                    <EditText
+                        android:id="@+id/tv_cementbrandname2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="Cement Brand"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/ed_cementbrandname2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="6dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="Dalmia, Ramco"
+                        android:textColor="@color/purple_700"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </TableRow>
+            </TableLayout>
+            <TextView
+                android:id="@+id/tv_sand2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="SAND"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/table14"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/table13" />
+
+            <TableLayout
+                android:id="@+id/table14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/black"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_sand2">
+
+                <TableRow>
+
+                    <EditText
+                        android:id="@+id/tv_sandname2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="Sand Name"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/ed_sandname2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="M-Sand &amp; P-Sand"
+                        android:textColor="@color/purple_700"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </TableRow>
+            </TableLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

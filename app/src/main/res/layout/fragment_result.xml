@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/banner_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:layout_constraintTop_toTopOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/plan_banner">
+    </com.google.android.gms.ads.AdView>
+
+
+    <ImageView
+        android:id="@+id/iv_reward"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="63dp"
+        android:src="@drawable/reward2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <TableLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/purple_200"
+        app:layout_constraintBottom_toTopOf="@+id/tv_finalresult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_reward"
+        app:layout_constraintVertical_bias="0.36">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/tv_totalmarks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="start"
+                android:paddingStart="8dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="Total Marks"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_totalmarksdata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="0"
+                android:textColor="@color/purple_700"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/tv_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="start"
+                android:paddingStart="8dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="Total Percentage"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_percentdata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="0 %"
+                android:textColor="@color/purple_700"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/tv_timetaken"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="start"
+                android:paddingStart="8dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="Time taken"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_timetakendata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="00:00"
+                android:textColor="@color/purple_700"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/tv_finalresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:backgroundTint="@color/purple_700"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:strokeColor="#D50000"
+        app:strokeWidth="1dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_companyname31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="QUOTATION"
+                android:textColor="@color/purple_800"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_place31" />
+
+            <TextView
+                android:id="@+id/tv_cellno31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="cell n0: 9023480923"
+                android:textColor="@color/purple_700"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/tv_place31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Place : Tanjore"
+                android:textColor="@color/purple_700"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+
+            <TableLayout
+                android:id="@+id/table9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_companyname31">
+
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/tv_slabcc2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="C-C"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/ed_slabcc2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="6dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:textColor="@color/purple_700"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/tv_thicknessslab2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="Thickness of slab"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/ed_thicknessslab2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="6dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:textColor="@color/purple_700"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/tv_brickwork2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="BRICK WORK"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/table10"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/table9" />
+
+            <TableLayout
+                android:id="@+id/table10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_brickwork2">
+
+                <TableRow>
+
+                    <EditText
+                        android:id="@+id/tv_typeofbrick2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="Type of brick"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/ed_typeofbrick2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="6dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="Country Bricks"
+                        android:textColor="@color/purple_700"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/tv_wallratio2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="9'' Wall ratio"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/ed_wallratio2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="6dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="1:6 Ratio"
+                        android:textColor="@color/purple_700"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/tv_4wallratio2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="4.5'' Wall ratio"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/ed_4wallratio2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="6dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="1:5"
+                        android:textColor="@color/purple_700"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+            </TableLayout>
+            <TextView
+                android:id="@+id/tv_plasteringwork2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="PLASTERING WORK"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/table11"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/table10" />
+
+            <TableLayout
+                android:id="@+id/table11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_plasteringwork2">
+
+                <TableRow>
+
+                    <EditText
+                        android:id="@+id/tv_plasterinworkratio2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="Ratio"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/ed_plasterinworkratio2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="6dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="1:5 Ratio"
+                        android:textColor="@color/purple_700"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/tv_tileswork2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="TILES WORK"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/table11" />
+            <TableLayout
+                android:id="@+id/table12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_tileswork2">
+
+                <TableRow>
+
+                    <EditText
+                        android:id="@+id/tv_hall2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="Hall,Bedroom,Kitchen,DinningRoom Floor Tiles Size &amp; Price"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/ed_hall2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+
+                        android:layout_marginEnd="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="2x2Tiles,45RS/sq,feet"
+                        android:textColor="@color/purple_700"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/tv_bathroom2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="Bathroom&amp;Kitchen Wall Tiles Price"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/ed_bathroom2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="30RS/sq feet"
+                        android:textColor="@color/purple_700"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+
+
+            </TableLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

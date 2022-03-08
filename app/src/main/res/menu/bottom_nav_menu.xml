@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/greyFragment"
+        android:icon="@drawable/ic_action_grey"
+        android:title="@string/title_grey" />
+
+    <item
+        android:id="@+id/colorFragment"
+        android:icon="@drawable/ic_action_color"
+        android:title="@string/title_color" />
+
+    <item
+        android:id="@+id/objectFragment"
+        android:icon="@drawable/ic_action_object"
+        android:title="@string/title_object" />
+
+</menu>

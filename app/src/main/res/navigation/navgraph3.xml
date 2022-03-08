@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navgraph2.xml"
+    app:startDestination="@id/model1Fragment">
+
+    <fragment
+        android:id="@+id/colorFragment"
+        android:name="com.codezcook.archiplanner.ui.dashboard.fragments.viewfragments.ColorFragment"
+        android:label="ColorFragment" >
+        <action
+            android:id="@+id/action_colorFragment_to_objectFragment2"
+            app:destination="@id/objectFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/greyFragment"
+        android:name="com.codezcook.archiplanner.ui.dashboard.fragments.viewfragments.GreyFragment"
+        android:label="GreyFragment" >
+        <action
+            android:id="@+id/action_greyFragment_to_model2Fragment"
+            app:destination="@id/model2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/objectFragment"
+        android:name="com.codezcook.archiplanner.ui.dashboard.fragments.viewfragments.ObjectFragment"
+        android:label="ObjectFragment" >
+        <action
+            android:id="@+id/action_objectFragment_to_model3Fragment"
+            app:destination="@id/model3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/model1Fragment"
+        android:name="com.codezcook.archiplanner.ui.dashboard.fragments.viewmodelsfrag.Model1Fragment"
+        android:label="Model1Fragment" >
+        <action
+            android:id="@+id/action_model1Fragment_to_greyFragment"
+            app:destination="@id/greyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/model2Fragment"
+        android:name="com.codezcook.archiplanner.ui.dashboard.fragments.viewmodelsfrag.Model2Fragment"
+        android:label="Model2Fragment" >
+        <action
+            android:id="@+id/action_model2Fragment_to_colorFragment"
+            app:destination="@id/colorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/model3Fragment"
+        android:name="com.codezcook.archiplanner.ui.dashboard.fragments.viewmodelsfrag.Model3Fragment"
+        android:label="Model3Fragment" />
+</navigation>

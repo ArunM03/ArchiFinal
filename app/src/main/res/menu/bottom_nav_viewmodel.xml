@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/model1Fragment"
+        android:icon="@drawable/ic_action_building"
+        android:title="@string/title_model1" />
+
+    <item
+        android:id="@+id/model2Fragment"
+        android:icon="@drawable/ic_action_building"
+        android:title="@string/title_model2" />
+
+    <item
+        android:id="@+id/model3Fragment"
+        android:icon="@drawable/ic_action_building"
+        android:title="@string/title_model3" />
+
+</menu>

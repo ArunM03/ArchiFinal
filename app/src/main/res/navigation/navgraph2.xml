@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navgraph2.xml"
+    app:startDestination="@id/greyFragment">
+
+    <fragment
+        android:id="@+id/colorFragment"
+        android:name="com.codezcook.archiplanner.ui.dashboard.fragments.viewfragments.ColorFragment"
+        android:label="ColorFragment" >
+        <action
+            android:id="@+id/action_colorFragment_to_model2Fragment2"
+            app:destination="@id/model2Fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/greyFragment"
+        android:name="com.codezcook.archiplanner.ui.dashboard.fragments.viewfragments.GreyFragment"
+        android:label="GreyFragment" >
+        <action
+            android:id="@+id/action_greyFragment_to_model1Fragment2"
+            app:destination="@id/model1Fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/objectFragment"
+        android:name="com.codezcook.archiplanner.ui.dashboard.fragments.viewfragments.ObjectFragment"
+        android:label="ObjectFragment" />
+    <fragment
+        android:id="@+id/model1Fragment2"
+        android:name="com.codezcook.archiplanner.ui.dashboard.fragments.viewmodelsfrag.Model1Fragment2"
+        android:label="Model1Fragment2" >
+        <action
+            android:id="@+id/action_model1Fragment2_to_colorFragment"
+            app:destination="@id/colorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/model2Fragment2"
+        android:name="com.codezcook.archiplanner.ui.dashboard.fragments.viewmodelsfrag.Model2Fragment2"
+        android:label="Model2Fragment2" >
+        <action
+            android:id="@+id/action_model2Fragment2_to_model3Fragment2"
+            app:destination="@id/model3Fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/model3Fragment2"
+        android:name="com.codezcook.archiplanner.ui.dashboard.fragments.viewmodelsfrag.Model3Fragment2"
+        android:label="Model3Fragment2" >
+        <action
+            android:id="@+id/action_model3Fragment2_to_objectFragment"
+            app:destination="@id/objectFragment" />
+    </fragment>
+</navigation>

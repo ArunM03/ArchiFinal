@@ -1,0 +1,3 @@
+rootProject.name = "Archiplanner"
+include ':app'
+

@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Archiplanner</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    //adunit banner
+    <string name="dashboard_banner">	ca-app-pub-3940256099942544/6300978111</string>
+    <string name="plan_banner">	ca-app-pub-3940256099942544/6300978111</string>
+    <string name="quotation_banner">	ca-app-pub-3940256099942544/6300978111</string>
+    <string name="qa_banner">	ca-app-pub-3940256099942544/6300978111</string>
+    <string name="elevation_banner">	ca-app-pub-3940256099942544/6300978111</string>
+
+    //adUnit interstitial
+    <string name="plandownload_interstitial">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="elevationdownload_interstitial">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="qaresult_interstitial">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="quotation_interstitial">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="adevery20min_interstitial">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="appopening_interstitial_poster">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="adevery10min_interstitial_poster">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="editbutton_interstitial_poster">ca-app-pub-3940256099942544/1033173712</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_dashboard">Dashboard</string>
+    <string name="menu_contactus">Contact Us</string>
+    <string name="menu_developer">Developer Contact</string>
+    <string name="title_grey">Grey</string>
+    <string name="title_color">Color</string>
+    <string name="title_object">Object</string>
+    <string name="title_model1">Model1</string>
+    <string name="title_model2">Model2</string>
+    <string name="title_model3">Model3</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+</resources>

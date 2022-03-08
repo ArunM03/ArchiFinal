@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/banner_planlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:layout_constraintTop_toTopOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/elevation_banner">
+    </com.google.android.gms.ads.AdView>
+
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:id="@+id/ed_search"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/ib_filter"
+        app:layout_constraintTop_toBottomOf="@id/banner_planlist"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:maxLines="1"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:padding="6dp"
+        android:hint="Search"
+        android:paddingStart="12dp"
+        android:textColorHint="@color/white"
+        android:theme="@style/ThemeOverlay.SearchView"
+        android:background="@color/purple_500"
+        android:queryHint="Search Here"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/banner_planlist"
+        android:paddingEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/ed_search"
+        android:paddingStart="16dp"
+        android:src="@drawable/ic_action_filter"
+        app:tint="@color/white"
+        android:background="@color/purple_500"
+        android:id="@+id/ib_filter"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ed_search"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingBottom="60dp"
+        android:clipToPadding="false"
+        android:layout_marginTop="8dp"
+        android:id="@+id/rv_plans"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rv_plans"
+        android:layout_marginTop="-60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="60dp"
+        android:layout_marginStart="16dp"
+        android:visibility="gone"
+        android:text="PREVIOUS"
+        android:id="@+id/bt_previous"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rv_plans"
+        android:layout_marginTop="-60dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="60dp"
+        android:text="NEXT"
+        android:visibility="gone"
+        android:id="@+id/bt_next"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/tv_comingsoon"
+        android:visibility="gone"
+        android:text="Coming Soon"
+        android:textSize="18sp"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/progressbar_plans"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

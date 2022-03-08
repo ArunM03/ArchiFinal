@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:strokeColor="#D50000"
+        app:strokeWidth="1dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_quotation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="QUOTATION"
+                android:textColor="#D50000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_companyname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="QUOTATION"
+                android:textColor="@color/purple_800"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_quotation" />
+
+            <TextView
+                android:id="@+id/tv_cellno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="cell n0: 9023480923"
+                android:textColor="@color/purple_700"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/tv_companyname"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Place : Tanjore"
+                android:textColor="@color/purple_700"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/tv_companyname"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_excavationwork"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:text="EXCAVATION WORK"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/table2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_companyname" />
+
+            <TableLayout
+                android:id="@+id/table2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@color/black"
+                app:layout_constraintBottom_toTopOf="@+id/tv_pcc2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_excavationwork">
+
+                <TableRow>
+
+                    <EditText
+                        android:id="@+id/tv_dimension"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxLines="3"
+                        android:maxHeight="60dp"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="Dimension"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/ed_dimension"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:textColor="@color/purple_700"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/tv_pcc2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="PCC"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/table3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/table2" />
+
+            <TableLayout
+                android:id="@+id/table3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_pcc2">
+
+                <TableRow>
+
+                    <EditText
+                        android:id="@+id/tv_thickness2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxLines="3"
+                        android:maxHeight="60dp"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="Footing Thickness"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/ed_thickness2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:maxLines="3"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:textColor="@color/purple_700"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </TableRow>
+                <TableRow>
+
+                    <EditText
+                        android:id="@+id/tv_flooring2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="Flooring Thickness"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/ed_flooring2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:textColor="@color/purple_700"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </TableRow>
+                <TableRow>
+
+                    <EditText
+                        android:id="@+id/tv_ratio2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="Ratio"
+                        android:layout_marginBottom="1dp"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/ed_ratio2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:paddingBottom="2dp"
+                        android:textColor="@color/purple_700"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+
+            </TableLayout>
+            <TextView
+                android:id="@+id/tv_footing2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="FOOTING"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/table4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/table3" />
+
+            <TableLayout
+                android:id="@+id/table4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_footing2">
+
+                <TableRow>
+
+                    <EditText
+                        android:id="@+id/tv_concreteratio2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="Concrete ratio"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/ed_concreteratio2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:textColor="@color/purple_700"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/tv_concretethickness2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="Concrete thickness"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/ed_concretethickness2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:textColor="@color/purple_700"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </TableRow>
+                <TableRow>
+
+                    <EditText
+                        android:id="@+id/tv_diaofrod2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="Dia of Rod"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/ed_diaofrod2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:textColor="@color/purple_700"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+            </TableLayout>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

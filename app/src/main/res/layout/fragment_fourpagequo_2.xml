@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:strokeColor="#D50000"
+        app:strokeWidth="1dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_companyname41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="QUOTATION"
+                android:textColor="@color/purple_800"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_place41" />
+
+            <TextView
+                android:id="@+id/tv_cellno41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="cell n0: 9023480923"
+                android:textColor="@color/purple_700"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_place41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Place : Tanjore"
+                android:textColor="@color/purple_700"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+            <TextView
+                android:id="@+id/tv_electricalwork2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="ELECTRICAL WORK"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_companyname41" />
+
+            <TableLayout
+                android:id="@+id/table15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_electricalwork2">
+
+                <TableRow>
+
+                    <EditText
+                        android:id="@+id/tv_switchesprce2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="Switches price"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/ed_switchesprce2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="6dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="15RS To 17RS"
+                        android:textColor="@color/purple_700"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <EditText
+                        android:id="@+id/tv_wiresbrand2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="Wires brand"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/ed_wiresbrand2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="6dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="Kundhan,Orbit"
+                        android:textColor="@color/purple_700"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <EditText
+                        android:id="@+id/tv_fanpoint2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="Fan point"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/ed_fanpoint2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="6dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="As Per Requirement"
+                        android:textColor="@color/purple_700"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/tv_lightpoint2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="Light Point"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/ed_lightpoint2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="6dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="3 Nos Each Room"
+                        android:textColor="@color/purple_700"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <EditText
+                        android:id="@+id/tv_acpoint2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="AC Point"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/ed_acpoint2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="6dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="1 Nos All Bedroom only"
+                        android:textColor="@color/purple_700"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <EditText
+                        android:id="@+id/tv_headerpoint2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="Heater Point"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/ed_headerpoint2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="6dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="1Nos"
+                        android:textColor="@color/purple_700"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <EditText
+                        android:id="@+id/tv_lightfitting2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="Light Fitting"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/ed_lightfitting2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="6dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="LED Tubeset 1Nos Each Room"
+                        android:textColor="@color/purple_700"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <EditText
+                        android:id="@+id/tv_switchbox2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="Switch Box"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/ed_switchbox2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:maxHeight="60dp"
+                        android:maxLines="3"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="start"
+                        android:paddingStart="6dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="Wood box"
+                        android:textColor="@color/purple_700"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </TableRow>
+            </TableLayout>
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

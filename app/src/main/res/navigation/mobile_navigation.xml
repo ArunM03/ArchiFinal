@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.codezcook.archiplanner.ui.dashboard.DashboardFragment"
+        android:label="@string/menu_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_nav_home_to_planFragment"
+            app:destination="@id/planFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_elevationFragment"
+            app:destination="@id/elevationFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_topicFragment"
+            app:destination="@id/topicFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_getDetailsFragment"
+            app:destination="@id/getDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.codezcook.archiplanner.ui.contactus.ContactUsFragment"
+        android:label="@string/menu_contactus"
+        tools:layout="@layout/fragment_contactus" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.codezcook.archiplanner.ui.developercontact.DeveloperFragment"
+        android:label="@string/menu_developer"
+        tools:layout="@layout/fragment_developercontact" />
+    <fragment
+        android:id="@+id/planFragment"
+        android:name="com.codezcook.archiplanner.ui.dashboard.fragments.PlanFragment"
+        android:label="Plans" >
+        <action
+            android:id="@+id/action_planFragment_to_planListFragment"
+            app:destination="@id/planListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/planListFragment"
+        android:name="com.codezcook.archiplanner.ui.dashboard.fragments.PlanListFragment"
+        android:label="Plans" >
+        <action
+            android:id="@+id/action_planListFragment_to_planViewFragment"
+            app:destination="@id/planViewFragment" />
+        <action
+            android:id="@+id/action_planListFragment_to_planVPFragment"
+            app:destination="@id/planVPFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/planViewFragment"
+        android:name="com.codezcook.archiplanner.ui.dashboard.fragments.PlanViewFragment"
+        android:label="PlanViewFragment" />
+    <fragment
+        android:id="@+id/planVPFragment"
+        android:name="com.codezcook.archiplanner.ui.dashboard.fragments.PlanVPFragment"
+        android:label="PlanVPFragment" >
+        <action
+            android:id="@+id/action_planVPFragment_to_imageFragment"
+            app:destination="@id/imageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favouritesFragment"
+        android:name="com.codezcook.archiplanner.ui.dashboard.fragments.FavouritesFragment"
+        android:label="FavouritesFragment" />
+    <fragment
+        android:id="@+id/elevationFragment"
+        android:name="com.codezcook.archiplanner.ui.dashboard.elevation.ElevationFragment"
+        android:label="ElevationFragment" >
+        <action
+            android:id="@+id/action_elevationFragment_to_elevationListFragment"
+            app:destination="@id/elevationListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/elevationListFragment"
+        android:name="com.codezcook.archiplanner.ui.dashboard.elevation.ElevationListFragment"
+        android:label="Elevations" >
+        <action
+            android:id="@+id/action_elevationListFragment_to_elevationVPFragment"
+            app:destination="@id/elevationVPFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/elevationVPFragment"
+        android:name="com.codezcook.archiplanner.ui.dashboard.elevation.ElevationVPFragment"
+        android:label="ElevationVPFragment" />
+    <fragment
+        android:id="@+id/topicFragment"
+        android:name="com.codezcook.archiplanner.ui.dashboard.qa.TopicFragment"
+        android:label="Civil Topics" >
+        <action
+            android:id="@+id/action_topicFragment_to_QAStudyFragment"
+            app:destination="@id/QAStudyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/QAStudyFragment"
+        android:name="com.codezcook.archiplanner.ui.dashboard.qa.QAStudyFragment"
+        android:label="QAStudyFragment" >
+        <action
+            android:id="@+id/action_QAStudyFragment_to_QATestFragment"
+            app:destination="@id/QATestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/QATestFragment"
+        android:name="com.codezcook.archiplanner.ui.dashboard.qa.QATestFragment"
+        android:label="QATestFragment" >
+        <action
+            android:id="@+id/action_QATestFragment_to_resultFragment"
+            app:destination="@id/resultFragment"
+            app:popUpTo="@id/QAStudyFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.codezcook.archiplanner.ui.dashboard.qa.ResultFragment"
+        android:label="ResultFragment" />
+    <fragment
+        android:id="@+id/getDetailsFragment"
+        android:name="com.codezcook.archiplanner.ui.dashboard.quotation.GetDetailsFragment"
+        android:label="Quotation" />
+    <fragment
+        android:id="@+id/imageFragment"
+        android:name="com.codezcook.archiplanner.ui.dashboard.fragments.ImageFragment"
+        android:label="ImageFragment" />
+</navigation>

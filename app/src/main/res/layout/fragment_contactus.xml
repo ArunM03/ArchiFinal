@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/logo_round"
+        />
+    <ImageView
+        android:id="@+id/app_name"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:src="@drawable/water_mark"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="@color/primary"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:text="Archi Planner providing Architech work like 2d vastu plan, 3d elevation, Structural
+    design, Estimation, Blueprint, Eder Drawing and Construction Work"
+
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Contact Number :"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        />
+
+    <TextView
+        android:id="@+id/con1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="+91 xxxxx xxxxx"
+        android:textColor="@color/primary"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="538dp" />
+
+    <TextView
+        android:id="@+id/con2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="+91 xxxxx xxxxx"
+        android:textColor="@color/primary"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Mail :"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/mail1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="xxx@archiplanner.in"
+        android:textColor="@color/primary"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
