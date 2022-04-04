@@ -431,7 +431,7 @@
                         android:paddingStart="8dp"
                         android:paddingTop="2dp"
                         android:paddingBottom="2dp"
-                        android:text="Hall,Bedroom,Kitchen,DinningRoom Floor Tiles Size &amp; Price"
+                        android:text="Hall,Bedroom,Kitchen,DinningRoom and Parking Floor Tiles Size"
                         android:textColor="@color/black"
                         android:textSize="13sp"
                         android:textStyle="bold" />

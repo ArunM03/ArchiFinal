@@ -99,7 +99,7 @@
                         android:paddingStart="8dp"
                         android:paddingTop="2dp"
                         android:paddingBottom="2dp"
-                        android:text="Concealed Pipe"
+                        android:text="Ceiling Painting Work"
                         android:textColor="@color/black"
                         android:textSize="12sp"
                         android:textStyle="bold" />

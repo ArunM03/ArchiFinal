@@ -28,6 +28,7 @@ import com.codezcook.archiplanner.data.ElevationResponseItem
 import com.codezcook.archiplanner.data.PlanResponseItem
 import com.codezcook.archiplanner2.R
 import com.google.android.gms.ads.AdRequest
+import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.content_home.*
 import kotlinx.android.synthetic.main.fragment_elevation.*
 import kotlinx.android.synthetic.main.fragment_elevationlist.*
@@ -68,13 +69,15 @@ class ElevationListFragment : Fragment(R.layout.fragment_elevationlist) {
         elevationAdapter.share {
             share(it.view, it.elevationResponseItem)
         }
+
+
         elevationAdapter.unSave {
-            viewmodel.unSaveFavtElevation("0",it.id)
+            viewmodel.unSaveFavtElevation(FirebaseAuth.getInstance().currentUser!!.uid!!,it.id)
             elevationAdapter.notifyDataSetChanged()
         }
 
         elevationAdapter.save {
-            viewmodel.saveFavtElevation("0",it.id)
+            viewmodel.saveFavtElevation(FirebaseAuth.getInstance().currentUser!!.uid!!,it.id)
             elevationAdapter.notifyDataSetChanged()
             Toast.makeText(requireContext(),"Saved Successfully",Toast.LENGTH_SHORT).show()
         }

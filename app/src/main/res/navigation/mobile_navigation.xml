@@ -128,4 +128,8 @@
         android:id="@+id/imageFragment"
         android:name="com.codezcook.archiplanner.ui.dashboard.fragments.ImageFragment"
         android:label="ImageFragment" />
+    <fragment
+        android:id="@+id/favtHomeFragment"
+        android:name="com.codezcook.archiplanner.ui.dashboard.fragments.FavtHomeFragment"
+        android:label="Favourites" />
 </navigation>

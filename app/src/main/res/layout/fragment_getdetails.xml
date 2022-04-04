@@ -2083,7 +2083,7 @@
                         android:id="@+id/tv_hall"
                         android:layout_width="0dp"
                         android:maxLines="3"
-                        android:maxLength="54"
+                        android:maxLength="70"
                         android:layout_height="60dp"
                         android:maxHeight="60dp"
                         android:layout_marginStart="1dp"
@@ -2095,7 +2095,7 @@
                         android:paddingStart="8dp"
                         android:paddingTop="4dp"
                         android:paddingBottom="4dp"
-                        android:text="Hall,Bedroom,Kitchen,DinningRoom Floor Tiles Size &amp; Price"
+                        android:text="Hall,Bedroom,Kitchen,DinningRoom and Parking Floor Tiles Size"
                         android:textColor="@color/black"
                          android:textSize="13sp"
                         android:textStyle="bold" />
@@ -3198,7 +3198,7 @@
                         android:paddingStart="8dp"
                         android:paddingTop="4dp"
                         android:paddingBottom="4dp"
-                        android:text="Concealed Pipe"
+                        android:text="Ceiling Painting Work"
                         android:textColor="@color/black"
                          android:textSize="13sp"
                         android:textStyle="bold" />

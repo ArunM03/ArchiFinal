@@ -27,7 +27,7 @@ import java.io.File
 import java.io.FileOutputStream
 import java.util.*
 
-class FavouritesFragment : Fragment(R.layout.fragment_favourites) {
+class FavouritesElevationFragment : Fragment(R.layout.fragment_favourites) {
 
     lateinit var viewmodel : PlanViewmodel
     val adapter = PlanFavAdapter()
@@ -50,6 +50,7 @@ class FavouritesFragment : Fragment(R.layout.fragment_favourites) {
         viewmodel.errorunsavePlanLive.observe(viewLifecycleOwner, Observer {
             Toast.makeText(requireContext(),"Something went wrong $it",Toast.LENGTH_SHORT).show()
         })
+
         viewmodel.unSavePlanLive.observe(viewLifecycleOwner, Observer {
             Toast.makeText(requireContext(),"Successfully removed",Toast.LENGTH_SHORT).show()
             adapter.notifyDataSetChanged()
@@ -59,19 +60,16 @@ class FavouritesFragment : Fragment(R.layout.fragment_favourites) {
             share(it.view, it.planResponseItem)
         }
 
-        Toast.makeText(requireContext(), FirebaseAuth.getInstance().currentUser!!.uid!!, Toast.LENGTH_SHORT).show()
-
         viewmodel.getFavtPlan(FirebaseAuth.getInstance().currentUser!!.uid!!)
 
         viewmodel.getFavtPlanLive.observe(viewLifecycleOwner, Observer {
             adapter.planlist = it
             planlist = it
-          //  Toast.makeText(requireContext(), "size $it", Toast.LENGTH_SHORT).show()
             adapter.notifyDataSetChanged()
         })
 
         viewmodel.errorgetFavtPlanLive.observe(viewLifecycleOwner, Observer {
-            Toast.makeText(requireContext(), "Something went wrong $it", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(),"Something went wrong $it",Toast.LENGTH_SHORT).show()
         })
 
 

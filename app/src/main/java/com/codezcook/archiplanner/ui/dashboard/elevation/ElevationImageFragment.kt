@@ -131,7 +131,7 @@ class ElevationImageFragment(val value : Int) : Fragment(R.layout.fragment_eleva
             val wallpaperDirectory = File("/sdcard/ArchPlanner/$folderName/")
             wallpaperDirectory.mkdirs()
         } */
-        val parent = File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).path + "/ArchPlanner/$folderName")
+        val parent = File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).path + "/ArchiPlanner/$folderName")
         if (!parent.exists()) {
             parent.mkdirs();
             // Toast.makeText(requireContext(), "not exist", Toast.LENGTH_SHORT).show();

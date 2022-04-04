@@ -33,6 +33,7 @@ import com.google.android.gms.ads.LoadAdError
 import com.google.android.gms.ads.MobileAds
 import com.google.android.gms.ads.interstitial.InterstitialAd
 import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
+import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.android.synthetic.main.app_bar_home.*
 import kotlinx.android.synthetic.main.content_home.*
@@ -135,8 +136,8 @@ class HomeActivity : AppCompatActivity() {
 
         
 
-        viewmodel.getFavtPlan("0")
-        viewmodel.getFavtElevation("0")
+        viewmodel.getFavtPlan(FirebaseAuth.getInstance().currentUser!!.uid!!)
+        viewmodel.getFavtElevation(FirebaseAuth.getInstance().currentUser!!.uid!!)
 
         viewmodel.getContact()
 
@@ -144,21 +145,24 @@ class HomeActivity : AppCompatActivity() {
 
 
         viewmodel.contactLive.observe(this, Observer { it ->
-            if (!Constants.contactUpdated){
-                Constants.contactDetails = it[0]
-                Constants.customerDetails = it[0]
+            if(!Constants.isDownload) {
+                if (!Constants.contactUpdated) {
+                    Constants.contactDetails = it[0]
+                    Constants.customerDetails = it[0]
+                }
             }
         })
 
         viewmodel.getFavtPlanLive.observe(this, Observer {
             Constants.favtIds = getFavtPlanIdsList(it).toMutableList()
         })
+
         viewmodel.getFavtElevationLive.observe(this, Observer {
             Constants.favtElevationIds = getFavtElevationIdsList(it).toMutableList()
         })
 
         ib_allfavts.setOnClickListener {
-            nav_host_fragment_content_home.findNavController().navigate(R.id.favouritesFragment)
+            nav_host_fragment_content_home.findNavController().navigate(R.id.favtHomeFragment)
         }
 
         viewmodel.errorGetFavtPlan.observe(this, Observer {

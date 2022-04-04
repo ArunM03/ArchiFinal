@@ -2,6 +2,7 @@ package com.codezcook.archiplanner.ui.dashboard.fragments
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.WindowManager
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.codezcook.archiplanner.Constants
@@ -14,6 +15,7 @@ import kotlinx.android.synthetic.main.fragment_model.*
 class ImageActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        window.setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE)
         setContentView(R.layout.activity_image)
 
         if (Constants.isModel23) {

@@ -26,6 +26,7 @@ import com.codezcook.archiplanner.api.PlanViewmodel
 import com.codezcook.archiplanner.data.PlanResponseItem
 import com.codezcook.archiplanner2.R
 import com.google.android.gms.ads.AdRequest
+import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.content_home.*
 import kotlinx.android.synthetic.main.fragment_elevation.*
 import kotlinx.android.synthetic.main.fragment_planlist.*
@@ -74,12 +75,12 @@ class PlanListFragment() : Fragment(R.layout.fragment_planlist) {
             share(it.view, it.planResponseItem)
         }
         planAdapter.unSave {
-            viewmodel.unSaveFavtPost("0",it.id!!)
+            viewmodel.unSaveFavtPost(FirebaseAuth.getInstance().currentUser?.uid!!,it.id!!)
             planAdapter.notifyDataSetChanged()
         }
 
         planAdapter.save {
-            viewmodel.saveFavtPost("0",it.id!!)
+            viewmodel.saveFavtPost(FirebaseAuth.getInstance().currentUser?.uid!!,it.id!!)
             planAdapter.notifyDataSetChanged()
             Toast.makeText(requireContext(),"Saved Successfully",Toast.LENGTH_SHORT).show()
         }

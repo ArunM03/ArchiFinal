@@ -285,7 +285,7 @@ class PlanViewmodel :  ViewModel() {
 
     fun saveFavtPost(data : String,data1 : String) = viewModelScope.launch(Dispatchers.IO) {
         try {
-            val response = RetrofitInstance.api.saveFavtPlan(data,data1)
+            val response = RetrofitInstance.api.saveFavtPlan("1234",data1)
         }catch (e:Exception){
             errorSaveFavtPlan.postValue(e.message)
         }
@@ -345,17 +345,17 @@ class PlanViewmodel :  ViewModel() {
     }
     fun getFavtPlan(data : String) = viewModelScope.launch(Dispatchers.IO) {
         try {
-            val response = RetrofitInstance.api.getFavtPlan(data)
-            if (response.isSuccessful){
-                response.body()?.let {
-                    val savePlanResponseItem = it.map {
-                        SavePlanResponseItemItem(it.created_at,it.facing,it.id,it.images,it.name,it.planid,it.room,it.status,it.tags,it.updated_at,it.userid)
-                    }
-                    getFavtPlanLive.postValue(savePlanResponseItem)
-                }
-            }else{
-                errorgetFavtPlanLive.postValue("Error")
-            }
+            val response = RetrofitInstance.api.getFavtPlan("1234")
+          if (response.isSuccessful){
+              response.body()?.let {
+                  val savePlanResponseItem = it.map {
+                       SavePlanResponseItemItem(it.created_at,it.facing,it.id,it.images,it.name,it.planid,it.room,it.status,it.tags,it.updated_at,it.userid)
+                  }
+                  getFavtPlanLive.postValue(savePlanResponseItem)
+              }
+           }else{
+               errorgetFavtPlanLive.postValue("Error")
+         }
         }catch (e:Exception){
             errorgetFavtPlanLive.postValue(e.message)
         }
